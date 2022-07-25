@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing</title>
+
+    <!-- Background -- WarpSpeed -->
+    <script type="text/javascript" src="./components/warpspeed.min.js"></script>
+
+    <!-- Icon -->
+    <link href="/media/keyboard.png" rel="icon" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <input type="text" class="inputField">
+        <div class="contentWrapper">
+            <div class="text">
+                <p></p>
+            </div>
+            <div class="content">
+                <ul class="items">
+                    <li class="time">
+                        <p>Time Left:</p>
+                        <span><b>90</b>s</span>
+                    </li>
+                    <li class="mistake">
+                        <p>Mistakes:</p>
+                        <span>0</span>
+                    </li>
+                    <li class="wpm">
+                        <p>WPM:</p>
+                        <span>0</span>
+                    </li>
+                    <li class="cpm">
+                        <p>CPM:</p>
+                        <span>0</span>
+                    </li>
+                </ul>
+                <button>Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background -- WarpSpeed -->
+    <canvas id="canvas" style="position:fixed; top:0; left:0; width:100%; height:100%;"></canvas>
+    <script>var x=new WarpSpeed("canvas");</script>
+    
+    <!-- JS -->
+    <script src="/components/data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
